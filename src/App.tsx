@@ -1,12 +1,14 @@
+import Header from "@/components/Header"
 
+Header
 
 function App() {
 
 
   return (
-    <>
-      <div>runner app</div>
-    </>
+    <div className="app bg-gray-20">
+      <Header/>
+    </div>
   )
 }
 
