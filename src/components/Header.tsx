@@ -2,9 +2,9 @@
 // import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/solid';
 // import Logo from "../assets/logo.png"
 
-type Props = {}
+// type Props = {}
 
-const Header = (props: Props) => {
+const Header = () => {
 
     return (
         <nav>
