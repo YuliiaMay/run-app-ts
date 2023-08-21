@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Faster+One&family=Inria+Sans&family=Orbitron:wght@500&display=swap');
-
+/* @config "./tailwindcss.config.js"; */
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -11,5 +11,6 @@ body,
     height: 100%;
     width: 100%;
     font-family: "Inria Sans", sans-serif;
-    @apply text-gray-500;
+    color: #5E0000;
+    background-color: #F8F4EB;
 }
