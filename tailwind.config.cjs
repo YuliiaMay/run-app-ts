@@ -24,10 +24,10 @@ module.exports = {
         inria: ["Inria Sans", "sans-serif"],
       },
       content: {
-        evolvetext: "url('./src/assets/images/EvolveText.png')",
-        abstractwaves: "url('./src/assets/images/AbstractWaves.png')",
-        sparkles: "url('./src/assets/images/Sparkles.png')",
-        circles: "url('./src/assets/images/Circles.png')",
+        evolvetext: "url('./assets/images/EvolveText.png')",
+        abstractwaves: "url('./assets/images/AbstractWaves.png')",
+        sparkles: "url('./assets/images/Sparkles.png')",
+        circles: "url('./assets/images/Circles.png')",
       },
     },
     screens: {
