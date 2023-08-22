@@ -6,6 +6,8 @@ type Props = {
     selectedPage: SelectedPage;
     setSelectedPage: (value: SelectedPage) => void;
 }
+
+
 const NavBarLink = ({page, selectedPage, setSelectedPage}: Props) => {
     const nextPage = page.toLocaleLowerCase().replace(/ /g, "") as SelectedPage;
     console.log(nextPage);
