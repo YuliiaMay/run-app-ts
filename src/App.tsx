@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import { SelectedPage } from "./shared/types";
 import Header from "@/components/Header/Header";
 import Home from "@/components/Home/Home";
+import Benefits from "@/components/Benefits/Benefits";
 
 
 const App = () => {
@@ -34,6 +35,9 @@ const App = () => {
         setSelectedPage={setSelectedPage}
       />
       <Home
+        setSelectedPage={setSelectedPage}
+      />
+      <Benefits
         setSelectedPage={setSelectedPage}
       />
     </div>
