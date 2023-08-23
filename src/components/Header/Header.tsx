@@ -1,12 +1,7 @@
-// import { useState } from "react";
-import { Bars3Icon } from '@heroicons/react/24/solid';
-// import Logo from "../assets/logo.png"
-
+import { useState } from "react";
 import useMediaQuery from "@/hooks/useMediaQuery";
 import { SelectedPage } from "@/shared/types";
-import NavBarLink from "./NavBarLink";
-import useToggle from '@/hooks/useToggle';
-import { useState } from 'react';
+import { Bars3Icon } from '@heroicons/react/24/solid';
 import MobileMenu from './MobileMenu';
 import NavBarList from './NavBarList';
 
@@ -17,18 +12,18 @@ type Props = {
     setSelectedPage: (value: SelectedPage) => void;
 }
 
+
 const Header = ({isTopOfPage, selectedPage, setSelectedPage}: Props) => {
     const flexBetween = "flex items-center justify-between";
     const navbarBackground = isTopOfPage ? "" : "bg-primary-100 drop-shadow";
     const isAboveMediumScreen = useMediaQuery("(min-width: 1280px)");
     const [isMenuToggled, setIsMenuToggled] = useState<boolean>(false);
-    
 
     return (
         <header className={`${navbarBackground} fixed top-0 z-30 w-full py-6`}>
             <div className={`${flexBetween} gap-16 mx-auto w-5/6`}>
-                <span className="font-logo text-3xl text-primary-500">
-                    RunTeam
+                <span className="font-logo uppercase text-3xl text-primary-500">
+                    evorun
                 </span>  
 
                 {/* DESCKTOP NAV */}
@@ -59,9 +54,7 @@ const Header = ({isTopOfPage, selectedPage, setSelectedPage}: Props) => {
                         />                        
                 }
             </div>
-
         </header>
-
     );
 }
 

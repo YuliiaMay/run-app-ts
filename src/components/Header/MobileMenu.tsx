@@ -1,4 +1,3 @@
-
 import { XMarkIcon } from '@heroicons/react/24/solid';
 import NavBarList from './NavBarList';
 import { SelectedPage } from '@/shared/types';
