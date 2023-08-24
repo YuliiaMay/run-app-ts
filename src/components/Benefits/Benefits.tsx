@@ -83,7 +83,7 @@ export const Benefits = ({ setSelectedPage }: Props) => {
                     ))}
                 </motion.div>
 
-                <Membership/>
+                <Membership setSelectedPage={setSelectedPage}/>
 
             </motion.div>
         </section>
