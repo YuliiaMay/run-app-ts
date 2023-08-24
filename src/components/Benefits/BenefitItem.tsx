@@ -21,11 +21,11 @@ export const BenefitItem = ({icon, title, description, setSelectedPage}: Props) 
             variants={childVariant}
             className="mt-5 rounded-md border-2 border-gray-100 px-5 py-16 text-center"        
         >
-            <div className="mb-4 flex-col justify-center">
-                <div className="rounded-full border-2 border-gray-100 bg-primary-100 p-4">
+            <div className="mb-4 flex flex-col gap-8 items-center ">
+                <div className="rounded-full border-2 border-gray-100 bg-primary-100 p-4 ">
                     {icon}
                 </div>
-                <h3>{title}</h3>
+                <h3 className="font-bold" >{title}</h3>
                 <p>{description}</p>
                 <AnchorLink
                     className="text-sm font-bold text-primary-500 underline hover:text-secondary-500"

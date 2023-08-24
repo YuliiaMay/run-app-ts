@@ -7,6 +7,8 @@ import Title from "@/shared/Title";
 import { SelectedPage, BenefitType } from "@/shared/types";
 import { motion } from "framer-motion";
 import BenefitItem from "./BenefitItem";
+import Membership from "./Membership";
+
 
 const benefits: Array<BenefitType> = [
     {
@@ -81,9 +83,13 @@ export const Benefits = ({ setSelectedPage }: Props) => {
                     ))}
                 </motion.div>
 
+                <Membership/>
+
             </motion.div>
         </section>
     );
 }
 
 export default Benefits;
+
+
