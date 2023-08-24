@@ -4,9 +4,14 @@ import Title from "@/shared/Title";
 import {
     CheckIcon,
 } from "@heroicons/react/24/solid";
+import ActionButton from "@/shared/ActionButton";
+import { SelectedPage } from "@/shared/types";
 
+type Props = {
+    setSelectedPage: (value: SelectedPage) => void
+}
 
-export const Membership = () => {
+export const Membership = ({setSelectedPage}: Props) => {
     return ( 
         <motion.div
             className="flex gap-16 justify-around my-16"
@@ -24,7 +29,8 @@ export const Membership = () => {
             </div>
             <div>
                 <Title>Included in Your Membership</Title>
-                <ul className="mt-10 text-lg">
+
+                <ul className="my-12 text-lg">
                     <li className="flex gap-2 mb-2">
                         <CheckIcon className="text-primary-500 w-6"/>
                         Four EAC training sessions per month
@@ -47,7 +53,14 @@ export const Membership = () => {
                         Custom workout playlists each week
                     </li>
                 </ul>
+
+                <ActionButton setSelectedPage={setSelectedPage}>
+                    Join Now
+                </ActionButton>
             </div>
+
+
+
 
         </motion.div>
     );
