@@ -3,6 +3,7 @@ import { SelectedPage } from "./shared/types";
 import Header from "@/components/Header/Header";
 import Home from "@/components/Home/Home";
 import Benefits from "@/components/Benefits/Benefits";
+import Feedback from "./components/Feedback/Feedback";
 
 
 const App = () => {
@@ -38,6 +39,10 @@ const App = () => {
         setSelectedPage={setSelectedPage}
       />
       <Benefits
+        setSelectedPage={setSelectedPage}
+      />
+
+      <Feedback
         setSelectedPage={setSelectedPage}
       />
     </div>
