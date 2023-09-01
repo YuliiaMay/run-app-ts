@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
-import MembershipGraphic from "@/assets/images/BenefitsPageGraphic.png"
+import MembershipGraphic from "@/assets/images/BenefitsPageGraphic.png";
+import MembershipImg from "@/assets/images/training.png"
 import Title from "@/shared/Title";
 import {
     CheckIcon,
@@ -14,7 +15,7 @@ type Props = {
 export const Membership = ({setSelectedPage}: Props) => {
     return ( 
         <motion.div
-            className="flex gap-16 justify-around my-16"
+            className="md:flex gap-16 items-end my-16"
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true, amount: 0.5 }}
@@ -25,8 +26,9 @@ export const Membership = ({setSelectedPage}: Props) => {
             }}            
         >
             <div>
-                <img className="max-w-sm" src={MembershipGraphic} alt="membership-graphic" />
+                <img className="max-w-xl" src={MembershipImg} alt="membership-graphic" />
             </div>
+
             <div>
                 <Title>Included in Your Membership</Title>
 
@@ -58,7 +60,6 @@ export const Membership = ({setSelectedPage}: Props) => {
                     Join Now
                 </ActionButton>
             </div>
-
 
 
 
